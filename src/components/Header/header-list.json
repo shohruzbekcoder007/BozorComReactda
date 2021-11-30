@@ -1,0 +1,34 @@
+{
+    "ru": {
+        "browse": "Browse-ru",
+        "blog": "Blog-ru",
+        "write_review": "Write Review-ru",
+        "login": "LOGIN-ru",
+        "signup": "SIGNUP-ru",
+        "register_pro": "REGISTER PRO-ru"
+    },
+    "uz": {
+        "browse": "Browse-uz",
+        "blog": "Blog-uz",
+        "write_review": "Write Review-uz",
+        "login": "LOGIN-uz",
+        "signup": "SIGNUP-uz",
+        "register_pro": "REGISTER PRO-uz"
+    },
+    "uzc": {
+        "browse": "Browse-uzc",
+        "blog": "Blog-uzc",
+        "write_review": "Write Review-uzc",
+        "login": "LOGIN-uzc",
+        "signup": "SIGNUP-uzc",
+        "register_pro": "REGISTER PRO-uzc"
+    },
+    "eng": {
+        "browse": "Browse",
+        "blog": "Blog",
+        "write_review": "Write Review",
+        "login": "LOGIN",
+        "signup": "SIGNUP",
+        "register_pro": "REGISTER PRO"
+    }
+}
