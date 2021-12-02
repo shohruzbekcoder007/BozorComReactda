@@ -5,6 +5,9 @@ export const HeaderWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 630px) {
+        flex-wrap: wrap;
+    }
 `;
 
 export const HeaderLogo = styled.img`
@@ -20,6 +23,10 @@ export const HeaderMenu = styled.div`
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
+    @media (max-width: 630px) {
+        width: 100%;
+        flex-wrap: wrap;
+    }
 `;
 
 export const HeaderMenuLeft = styled.div`
@@ -33,6 +40,10 @@ export const HeaderSeparater = styled.div`
     width: 2px;
     height: 32px;
     background-color: #F0E2CE;
+    @media (max-width: 630px) {
+        width: 100%;
+        height: 2px;
+    }
 `;
 
 export const HeaderMenuRight = styled.div`
@@ -58,6 +69,9 @@ export const HeaderLeftLink = styled.span`
         background-color: #000000;
         content: ""
     }
+    @media (max-width: 770px) {
+        margin-right: 20px;
+    }
 `;
 
 export const HeaderRightLink = styled.span`
@@ -76,6 +90,9 @@ export const HeaderRightLink = styled.span`
         background-color: #000000;
         content: ""
     }
+    @media (max-width: 770px) {
+        margin-left: 10px;
+    }
 `;
 
 export const RegisterLink = styled.span`
@@ -90,4 +107,12 @@ export const RegisterLink = styled.span`
     background: #001730;
     border-radius: 5px;
     text-transform: uppercase;
+`;
+
+export const HeaderSecretLogo = styled.span`
+    display: none;
+    cursor: pointer;
+    @media (max-width: 630px){
+        display: inline-block;
+    }
 `;

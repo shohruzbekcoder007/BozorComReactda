@@ -12,8 +12,10 @@ import {
     HeaderRightLink,
     HeaderSeparater,
     RegisterLink,
+    HeaderSecretLogo
 } from './styles'
 import  logo  from './../../assets/img/logo_horvic.png'
+import  burger  from './../../assets/img/header-logo.png'
 import { globalState } from './../../globalState';
 import texts from './header-list.json';
 
@@ -28,6 +30,9 @@ export default function Header() {
     return (
         <HeaderWrapper>
             <HeaderLogo src={logo}/>
+            <HeaderSecretLogo>
+                <img src={burger} />
+            </HeaderSecretLogo>
             <HeaderMenu>
                 <HeaderMenuLeft>
                     <HeaderLeftLink active>{text.browse}</HeaderLeftLink>
