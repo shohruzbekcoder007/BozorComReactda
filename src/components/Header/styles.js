@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 
 export const HeaderWrapper = styled.div`
     Width: 100%;
@@ -26,6 +27,7 @@ export const HeaderMenu = styled.div`
     @media (max-width: 630px) {
         width: 100%;
         flex-wrap: wrap;
+        font-size: 19px;
     }
 `;
 
@@ -34,6 +36,12 @@ export const HeaderMenuLeft = styled.div`
     padding-right: 6px;
     display: flex;
     align-items: center;
+    @media (max-width: 630px) {
+        width: 100%;
+        display: block;
+        padding: 10px 0 10px 0;
+        text-align: center;
+    }
 `;
 
 export const HeaderSeparater = styled.div`
@@ -51,12 +59,19 @@ export const HeaderMenuRight = styled.div`
     padding-left: 12px;
     display: flex;
     align-items: center;
+    @media (max-width: 630px) {
+        width: 100%;
+        display: block;
+        padding: 10px 0 10px 0;
+        text-align: center;
+    }
 `;
 
-export const HeaderLeftLink = styled.span`
+export const HeaderLeftLink = styled(Link)`
     display: inline-block;
     margin-right: 48px;
     position: relative;
+    color: #021633;
     font-weight: ${props => props.active ? "bold" : "normal"};
     ::after {
         display: ${props => props.active ? "inline-block" : "none"};
@@ -72,12 +87,22 @@ export const HeaderLeftLink = styled.span`
     @media (max-width: 770px) {
         margin-right: 20px;
     }
+    @media (max-width: 630px) {
+        width: 100%;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 10px 0;
+        ::after{
+            display: none;
+        }
+    }
 `;
 
-export const HeaderRightLink = styled.span`
+export const HeaderRightLink = styled(Link)`
     display: inline-block;
     margin-left: 24px;
     position: relative;
+    color: #021633;
     font-weight: ${props => props.active ? "bold" : "normal"};
     ::after {
         display: ${props => props.active ? "inline-block" : "none"};
@@ -93,9 +118,18 @@ export const HeaderRightLink = styled.span`
     @media (max-width: 770px) {
         margin-left: 10px;
     }
+    @media (max-width: 630px) {
+        width: 100%;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 10px 0;
+        ::after{
+            display: none;
+        }
+    }
 `;
 
-export const RegisterLink = styled.span`
+export const RegisterLink = styled(Link)`
     display: inline-block;
     margin-left: 24px;
     font-style: normal;
@@ -107,6 +141,10 @@ export const RegisterLink = styled.span`
     background: #001730;
     border-radius: 5px;
     text-transform: uppercase;
+    @media (max-width: 630px) {
+        margin: 0;
+        align-items: center;
+    }
 `;
 
 export const HeaderSecretLogo = styled.span`

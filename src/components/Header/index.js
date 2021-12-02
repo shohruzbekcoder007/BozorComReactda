@@ -18,6 +18,7 @@ import  logo  from './../../assets/img/logo_horvic.png'
 import  burger  from './../../assets/img/header-logo.png'
 import { globalState } from './../../globalState';
 import texts from './header-list.json';
+import { BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 
 export default function Header() {
 
@@ -28,24 +29,26 @@ export default function Header() {
     },[globalState.language])
 
     return (
-        <HeaderWrapper>
-            <HeaderLogo src={logo}/>
-            <HeaderSecretLogo>
-                <img src={burger} />
-            </HeaderSecretLogo>
-            <HeaderMenu>
-                <HeaderMenuLeft>
-                    <HeaderLeftLink active>{text.browse}</HeaderLeftLink>
-                    <HeaderLeftLink>{text.blog}</HeaderLeftLink>
-                    <HeaderLeftLink>{text.write_review}</HeaderLeftLink>
-                </HeaderMenuLeft>
-                <HeaderSeparater/>
-                <HeaderMenuRight>
-                    <HeaderRightLink>{text.login}</HeaderRightLink>
-                    <HeaderRightLink>{text.signup}</HeaderRightLink>
-                    <RegisterLink>{text.register_pro}</RegisterLink>
-                </HeaderMenuRight>
-            </HeaderMenu>
-        </HeaderWrapper>
+        <Router>
+            <HeaderWrapper>
+                <HeaderLogo src={logo}/>
+                <HeaderSecretLogo>
+                    <img src={burger} />
+                </HeaderSecretLogo>
+                <HeaderMenu>
+                    <HeaderMenuLeft>
+                        <HeaderLeftLink to="/browse" active>{text.browse}</HeaderLeftLink>
+                        <HeaderLeftLink to="/blog">{text.blog}</HeaderLeftLink>
+                        <HeaderLeftLink to="/write_review">{text.write_review}</HeaderLeftLink>
+                    </HeaderMenuLeft>
+                    <HeaderSeparater/>
+                    <HeaderMenuRight>
+                        <HeaderRightLink to="/login">{text.login}</HeaderRightLink>
+                        <HeaderRightLink to="/signup">{text.signup}</HeaderRightLink>
+                        <RegisterLink to="/register_pro">{text.register_pro}</RegisterLink>
+                    </HeaderMenuRight>
+                </HeaderMenu>
+            </HeaderWrapper>
+        </Router>
     )
 }
