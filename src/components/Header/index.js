@@ -1,6 +1,5 @@
-import React, {
-    useState,
-    useEffect
+import React, { 
+    useState 
 } from 'react'
 import { 
     HeaderWrapper,
@@ -18,37 +17,71 @@ import  logo  from './../../assets/img/logo_horvic.png'
 import  burger  from './../../assets/img/header-logo.png'
 import { globalState } from './../../globalState';
 import texts from './header-list.json';
-import { BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+import { observer } from "mobx-react";
 
-export default function Header() {
+const Header = () => {
 
-    const [text, setText] = useState(texts[globalState.language]);
+    const [active, setActive] = useState(1);
 
-    useEffect(()=>{
-        setText(texts[globalState.language])
-    },[globalState.language])
+    const handleActiveLink = (value) => {
+        setActive(value);
+    }
 
     return (
-        <Router>
-            <HeaderWrapper>
-                <HeaderLogo src={logo}/>
-                <HeaderSecretLogo>
-                    <img src={burger} />
-                </HeaderSecretLogo>
-                <HeaderMenu>
-                    <HeaderMenuLeft>
-                        <HeaderLeftLink to="/browse" active>{text.browse}</HeaderLeftLink>
-                        <HeaderLeftLink to="/blog">{text.blog}</HeaderLeftLink>
-                        <HeaderLeftLink to="/write_review">{text.write_review}</HeaderLeftLink>
-                    </HeaderMenuLeft>
-                    <HeaderSeparater/>
-                    <HeaderMenuRight>
-                        <HeaderRightLink to="/login">{text.login}</HeaderRightLink>
-                        <HeaderRightLink to="/signup">{text.signup}</HeaderRightLink>
-                        <RegisterLink to="/register_pro">{text.register_pro}</RegisterLink>
-                    </HeaderMenuRight>
-                </HeaderMenu>
-            </HeaderWrapper>
-        </Router>
+        <HeaderWrapper>
+            <HeaderLogo src={logo}/>
+            <HeaderSecretLogo>
+                <img src={burger} />
+            </HeaderSecretLogo>
+            <HeaderMenu>
+                <HeaderMenuLeft>
+                    <HeaderLeftLink 
+                        to="/" 
+                        onClick={()=>handleActiveLink(1)} 
+                        active={active == 1 ? "active": ''}
+                    >
+                        {texts[globalState.language].browse}
+                    </HeaderLeftLink>
+                    <HeaderLeftLink 
+                        to="/blog"
+                        onClick={()=>handleActiveLink(2)}
+                        active={active == 2 ? "active": ''}
+                    >
+                        {texts[globalState.language].blog}
+                    </HeaderLeftLink>
+                    <HeaderLeftLink 
+                        to="/write_review"
+                        onClick={()=>handleActiveLink(3)}
+                        active={active == 3 ? "active": ''}
+                    >
+                        {texts[globalState.language].write_review}
+                    </HeaderLeftLink>
+                </HeaderMenuLeft>
+                <HeaderSeparater/>
+                <HeaderMenuRight>
+                    <HeaderRightLink 
+                        to="/login"
+                        onClick={()=>handleActiveLink(4)}
+                        active={active == 4 ? "active": ''}
+                    >
+                        {texts[globalState.language].login}
+                    </HeaderRightLink>
+                    <HeaderRightLink 
+                        to="/signup"
+                        onClick={()=>handleActiveLink(5)}
+                        active={active == 5 ? "active": ''}
+                    >
+                        {texts[globalState.language].signup}
+                    </HeaderRightLink>
+                    <RegisterLink 
+                        onClick={()=>handleActiveLink(0)}
+                        to="/register_pro"
+                    >
+                        {texts[globalState.language].register_pro}</RegisterLink>
+                </HeaderMenuRight>
+            </HeaderMenu>
+        </HeaderWrapper>
     )
 }
+
+export default observer(Header);
