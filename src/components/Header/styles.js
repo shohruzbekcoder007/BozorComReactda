@@ -19,11 +19,14 @@ export const HeaderMenu = styled.div`
     display: flex;
     justify-content: space-between;
     color: #021633;
-    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
+    letter-spacing: 1.5px;
+    @media (max-width: 860px) {
+        letter-spacing: 0;
+    }
     @media (max-width: 630px) {
         width: 100%;
         flex-wrap: wrap;

@@ -1,0 +1,30 @@
+{
+    "ru": {
+        "main_text": "Solve Your Problem-ru",
+        "text_bottom": "message us, to find out how our-ru",
+        "find_service": "FIND SERVICE-ru",
+        "hero": "QAHRAMONLAR",
+        "bottom_main_text": "Here is what you can do on Horvic"
+    },
+    "uz": {
+        "main_text": "Muammoingizni hal qiling",
+        "text_bottom": "message us, to find out how our-uz",
+        "find_service": "XIZMATNI TOPING",
+        "hero": "QAHRAMONLAR",
+        "bottom_main_text": "Here is what you can do on Horvic"
+    },
+    "uzc": {
+        "main_text": "Solve Your Problem-uzc",
+        "text_bottom": "message us, to find out how our-uzc",
+        "find_service": "FIND SERVICE-uzc",
+        "hero": "QAHRAMONLAR",
+        "bottom_main_text": "Here is what you can do on Horvic"
+    },
+    "eng": {
+        "main_text": "Solve Your Problem",
+        "text_bottom": "message us, to find out how our",
+        "find_service": "FIND SERVICE",
+        "hero": "BE HERO",
+        "bottom_main_text": "Here is what you can do on Horvic"
+    }
+}

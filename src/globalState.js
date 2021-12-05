@@ -1,4 +1,4 @@
-import { action, observable, toJS } from "mobx";
+import { action, observable } from "mobx"; //toJS
 
 export const globalState = observable({
   language: "eng",

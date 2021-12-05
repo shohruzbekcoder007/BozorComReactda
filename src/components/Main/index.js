@@ -11,7 +11,6 @@ const Main = () => {
             <Router>
                 <>
                     <Header/>
-                    <a href="#3">3 ga bor</a>
                         <Routers>
                             <Switch>
                                 <Route exact path="/">
@@ -34,15 +33,7 @@ const Main = () => {
                                 </Route>
                             </Switch>
                         </Routers>
-                    <Footer id="#1"/>
-                    <Footer id="#2"/>
-                    <Footer id="3"/>
-                    <Footer id="#4"/>
-                    <Footer id="#5"/>
-                    <Footer id="#6"/>
-                    <Footer id="#7"/>
-                    <Footer id="#8"/>
-                    <Footer id="#9"/>
+                    <Footer/>
                 </>
             </Router>
         </Wrapper>

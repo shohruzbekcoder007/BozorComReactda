@@ -1,16 +1,9 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #E5E5E5;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
 
 html{
@@ -51,6 +44,7 @@ h1,h2,h3,h4,h5,h6,p{
   width: 1114px;
   margin: 0 auto;
   padding-top: 40px;
+  font-family: 'Poppins', sans-serif;
 }
 
 @media only screen and (max-width: 1114px){

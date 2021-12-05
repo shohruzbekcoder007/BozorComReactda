@@ -31,28 +31,28 @@ const Header = () => {
         <HeaderWrapper>
             <HeaderLogo src={logo}/>
             <HeaderSecretLogo>
-                <img src={burger} />
+                <img src={burger} alt="brend logo"/>
             </HeaderSecretLogo>
             <HeaderMenu>
                 <HeaderMenuLeft>
                     <HeaderLeftLink 
                         to="/" 
                         onClick={()=>handleActiveLink(1)} 
-                        active={active == 1 ? "active": ''}
+                        active={active === 1 ? "active": ''}
                     >
                         {texts[globalState.language].browse}
                     </HeaderLeftLink>
                     <HeaderLeftLink 
                         to="/blog"
                         onClick={()=>handleActiveLink(2)}
-                        active={active == 2 ? "active": ''}
+                        active={active === 2 ? "active": ''}
                     >
                         {texts[globalState.language].blog}
                     </HeaderLeftLink>
                     <HeaderLeftLink 
                         to="/write_review"
                         onClick={()=>handleActiveLink(3)}
-                        active={active == 3 ? "active": ''}
+                        active={active === 3 ? "active": ''}
                     >
                         {texts[globalState.language].write_review}
                     </HeaderLeftLink>
@@ -62,14 +62,14 @@ const Header = () => {
                     <HeaderRightLink 
                         to="/login"
                         onClick={()=>handleActiveLink(4)}
-                        active={active == 4 ? "active": ''}
+                        active={active === 4 ? "active": ''}
                     >
                         {texts[globalState.language].login}
                     </HeaderRightLink>
                     <HeaderRightLink 
                         to="/signup"
                         onClick={()=>handleActiveLink(5)}
-                        active={active == 5 ? "active": ''}
+                        active={active === 5 ? "active": ''}
                     >
                         {texts[globalState.language].signup}
                     </HeaderRightLink>

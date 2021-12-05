@@ -2,7 +2,7 @@
     "ru": {
         "browse": "Browse-ru",
         "blog": "Blog-ru",
-        "write_review": "Write Review-ru",
+        "write_review": "WRITE REVIEW-ru",
         "login": "LOGIN-ru",
         "signup": "SIGNUP-ru",
         "register_pro": "REGISTER PRO-ru"
@@ -10,7 +10,7 @@
     "uz": {
         "browse": "Browse-uz",
         "blog": "Blog-uz",
-        "write_review": "Write Review-uz",
+        "write_review": "WRITE REVIEW-uz",
         "login": "LOGIN-uz",
         "signup": "SIGNUP-uz",
         "register_pro": "REGISTER PRO-uz"
@@ -18,16 +18,16 @@
     "uzc": {
         "browse": "Browse-uzc",
         "blog": "Blog-uzc",
-        "write_review": "Write Review-uzc",
+        "write_review": "WRITE REVIEW-uzc",
         "login": "LOGIN-uzc",
         "signup": "SIGNUP-uzc",
         "register_pro": "REGISTER PRO-uzc"
     },
     "eng": {
         "browse": "Browse",
-        "blog": "Blog",
-        "write_review": "Write Review",
-        "login": "LOGIN",
+        "blog": "BLOG",
+        "write_review": "WRITE REVIEW",
+        "login": "Login",
         "signup": "SIGNUP",
         "register_pro": "REGISTER PRO"
     }
