@@ -27,9 +27,9 @@ const Welcome = () => {
     return (
         <WelcomeWrapper>
             <WelcomeTop>
-                <MainWelcomeText>
-                    {texts[globalState.language].main_text}
-                </MainWelcomeText>
+                <MainWelcomeText 
+                    dangerouslySetInnerHTML={ {__html: texts[globalState.language].main_text} } 
+                />
                 <WelcomeTextBottom>
                     {texts[globalState.language].text_bottom}
                 </WelcomeTextBottom>
@@ -52,25 +52,25 @@ const Welcome = () => {
                         <SuggestItemImg>
                             <img src={suggest1} alt="suggest"/>
                         </SuggestItemImg>
-                        <SuggestItemTeaxt>Same day/next day service available</SuggestItemTeaxt>
+                        <SuggestItemTeaxt>{texts[globalState.language].conveniences.discover}</SuggestItemTeaxt>
                     </SuggestItem>
                     <SuggestItem>
                         <SuggestItemImg>
                             <img src={suggest2} alt="suggest"/>
                         </SuggestItemImg>
-                        <SuggestItemTeaxt>Same day/next day service available</SuggestItemTeaxt>
+                        <SuggestItemTeaxt>{texts[globalState.language].conveniences.free}</SuggestItemTeaxt>
                     </SuggestItem>
                     <SuggestItem>
                         <SuggestItemImg>
                             <img src={suggest3} alt="suggest"/>
                         </SuggestItemImg>
-                        <SuggestItemTeaxt>Same day/next day service available</SuggestItemTeaxt>
+                        <SuggestItemTeaxt>{texts[globalState.language].conveniences.day}</SuggestItemTeaxt>
                     </SuggestItem>
                     <SuggestItem>
                         <SuggestItemImg>
                             <img src={suggest4} alt="suggest"/>
                         </SuggestItemImg>
-                        <SuggestItemTeaxt>Same day/next day service available</SuggestItemTeaxt>
+                        <SuggestItemTeaxt>{texts[globalState.language].conveniences.suggest}</SuggestItemTeaxt>
                     </SuggestItem>
                 </Suggest>
             </WelcomeBottom>

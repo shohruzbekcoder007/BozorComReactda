@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../Header'
 import Footer from '../Footer'
 import Welcome from '../Welcome'
+import Popular from '../Popular'
 import { Wrapper, Routers } from './styles'
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom"
 
@@ -14,7 +15,10 @@ const Main = () => {
                         <Routers>
                             <Switch>
                                 <Route exact path="/">
-                                    <Welcome/>
+                                    <>
+                                        <Welcome/>
+                                        <Popular/>
+                                    </>
                                 </Route>
                                 <Route path="/blog">
                                     <p>blog</p>

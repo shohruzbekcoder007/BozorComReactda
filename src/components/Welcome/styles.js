@@ -7,14 +7,14 @@ export const WelcomeWrapper = styled.div`
     background-repeat: no-repeat;
     background-position: top right;
     padding-top: 61px;
+    margin-bottom: 220px;
 `;
 
 export const WelcomeTop = styled.div`
-    width: 465px;
+    display: inline-block;
 `;
 
 export const MainWelcomeText = styled.p`
-    max-width: 401px;
     font-style: normal;
     font-weight: bold;
     font-size: 70px;
@@ -24,7 +24,6 @@ export const MainWelcomeText = styled.p`
 `;
 
 export const WelcomeTextBottom = styled.p`
-    max-width: 401px;
     font-style: normal;
     font-weight: normal;
     font-size: 23px;
@@ -35,7 +34,7 @@ export const WelcomeTextBottom = styled.p`
 `;
 
 export const WelcomeForm = styled.div`
-    width: 100%;
+    width: 465px;
     display: flex;
     justify-content: space-between;
     padding-top: 22px;
