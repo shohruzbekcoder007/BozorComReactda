@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const PoularWrapper = styled.div`
     width: 100%;
+    margin-bottom: 216px;
 `;
 
 export const PoularText = styled.p`
@@ -23,6 +24,8 @@ export const PopularItemWrapper = styled.div`
     background: #FCFCFC;
     border-radius: 10px;
     padding: 15px;
+    display: inline-block;
+    text-align: left;
     ::hover: {
         box-shadow: 0px 12px 35px rgba(5, 9, 19, 0.05);
     }

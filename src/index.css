@@ -52,11 +52,15 @@ h1,h2,h3,h4,h5,h6,p{
   bottom: -115px;
 }
 
-.slick-next {
+.popular-slider .slick-slide {
+  text-align: center;
+}
+
+.popular-slider .slick-next {
   right: 0;
 }
 
-.slick-prev {
+.popular-slider .slick-prev {
   right: 62px;
 }
 

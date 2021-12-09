@@ -5,6 +5,7 @@ import Welcome from '../Welcome'
 import Popular from '../Popular'
 import { Wrapper, Routers } from './styles'
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom"
+import Hire from '../Hire'
 
 const Main = () => {
     return (
@@ -18,6 +19,7 @@ const Main = () => {
                                     <>
                                         <Welcome/>
                                         <Popular/>
+                                        <Hire/>
                                     </>
                                 </Route>
                                 <Route path="/blog">

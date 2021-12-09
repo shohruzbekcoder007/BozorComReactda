@@ -39,7 +39,21 @@ const PopularSlider = () => {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
-        pauseOnHover: true
+        pauseOnHover: true,
+        responsive: [
+            {
+              breakpoint: 1110,
+              settings: {
+                slidesToShow: 2
+              }
+            },
+            {
+              breakpoint: 750,
+              settings: {
+                slidesToShow: 1
+              }
+            }
+          ]
     }
 
     return (
