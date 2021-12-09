@@ -47,6 +47,19 @@ h1,h2,h3,h4,h5,h6,p{
   font-family: 'Poppins', sans-serif;
 }
 
+.popular-slider .slick-arrow {
+  position: absolute;
+  bottom: -115px;
+}
+
+.slick-next {
+  right: 0;
+}
+
+.slick-prev {
+  right: 62px;
+}
+
 @media only screen and (max-width: 1114px){
   #root{
     padding-left: 15px;
@@ -55,3 +68,4 @@ h1,h2,h3,h4,h5,h6,p{
     width: 100%;
   }
 }
+
