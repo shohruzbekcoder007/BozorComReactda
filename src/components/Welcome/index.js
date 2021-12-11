@@ -40,7 +40,7 @@ const Welcome = () => {
                     <Hero>
                         {texts[globalState.language].hero}
                     </Hero>
-                    <SorchInput placeholder="What is on your to-do list?"/>
+                    <SorchInput placeholder={texts[globalState.language].search_placeholder}/>
                 </WelcomeForm>
             </WelcomeTop>
             <WelcomeBottom>

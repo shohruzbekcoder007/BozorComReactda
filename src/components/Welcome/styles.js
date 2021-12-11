@@ -109,6 +109,7 @@ export const Suggest = styled.div`
     display: flex;
     flex-flow: wrap;
     justify-content: space-around;
+    align-items: flex-start;
 `;
 
 export const SuggestItem = styled.div`

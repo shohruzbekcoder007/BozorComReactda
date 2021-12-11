@@ -10,7 +10,8 @@
             "free": "Free Insurance Coverage",
             "day": "Same day/next day service available",
             "suggest": "Suggest Pros"
-        }
+        },
+        "search_placeholder": "What is on your to-do list-ru?"
     },
     "uz": {
         "main_text": "Muammoingizni <br/> hal qiling",
@@ -23,7 +24,8 @@
             "free": "Free Insurance Coverage",
             "day": "Same day/next day service available",
             "suggest": "Suggest Pros"
-        }
+        },
+        "search_placeholder": "What is on your to-do list-uz?"
     },
     "uzc": {
         "main_text": "Solve Your Problem-uzc",
@@ -36,7 +38,8 @@
             "free": "Free Insurance Coverage",
             "day": "Same day/next day service available",
             "suggest": "Suggest Pros"
-        }
+        },
+        "search_placeholder": "What is on your to-do list-uzc?"
     },
     "eng": {
         "main_text": "Solve Your <br/> Problem",
@@ -49,6 +52,7 @@
             "free": "Free Insurance Coverage",
             "day": "Same day/next day service available",
             "suggest": "Suggest Pros"
-        }
+        },
+        "search_placeholder": "What is on your to-do list?"
     }
 }
