@@ -6,6 +6,9 @@ import Popular from '../Popular'
 import { Wrapper, Routers } from './styles'
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom"
 import Hire from '../Hire'
+import Experience from '../Experience'
+import AboutUs from '../AboutUs'
+import Job from '../Job'
 
 const Main = () => {
     return (
@@ -20,6 +23,9 @@ const Main = () => {
                                         <Welcome/>
                                         <Popular/>
                                         <Hire/>
+                                        <Experience/>
+                                        <AboutUs/>
+                                        <Job/>
                                     </>
                                 </Route>
                                 <Route path="/blog">
